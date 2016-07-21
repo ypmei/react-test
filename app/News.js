@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import _ from "lodash"
+import { sum } from './sum'
 
 export default class News extends Component {
   constructor (props) {
@@ -17,6 +18,7 @@ export default class News extends Component {
       <div>
         <h1>Count</h1>
         <h1 className="red">num</h1>
+        <span>{sum(2,3)}</span>
         <ul>
           {this.state.items.map((item)=>{
             return (<li key={item}>{item}</li>)
